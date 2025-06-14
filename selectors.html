@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class{
+            color:pink;
+        }
+        #id{
+            color:blue
+        }
+        h3{
+            color:blueviolet;
+            background-color: pink;
+        }
+        *{
+            color:red;
+        }
+        h4,h5,p{
+            background-color: green;
+        }
+        parent>h1,h2{
+            background-color: red;
+        }
+        .parent h1{
+            background-color: gray;
+        }
+       .parent>h1+p{
+        color:aquamarine;
+       }
+       .parent >h1~p{
+        color:purple;
+       }
+    </style>
+</head>
+<body>
+    <h1>Simple selectors</h1>
+    <h4 class="class">my name is ramyasri</h4>
+    <h5 id="id">i am from challapalli</h5>
+    <h3>i did my graduation in information technology</h3>
+    <p >college name is seshadhri rao gudlavalleru engineering college</p>
+    <h2>technical skills are python</h2>
+    <h1>web development skills are HTML CSS</h1>
+    <p>data base skills are SQL</p>
+    <h1>Combinator selectors</h1>
+    <div class="parent">
+        <h4>child1</h4>
+        <p>child2</p>
+        <h1>child2</h1>
+        <div class="sub-parent">
+            <h1>sub-child</h1>
+            <h2>child3</h2>
+        </div>
+        </div>
+        <h2>child3</h2>
+    </div>
+</body>
+</html>
